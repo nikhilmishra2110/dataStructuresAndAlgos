@@ -1,9 +1,8 @@
-def evenNumber(i):
-    count1 = 0
-    while(i):
-        digit = i%10
-        i//=10
-        count1+=1
-    print (count1)
+def findNumbers(nums):
+    res = 0
+    for num in nums:
+        if len(str(num)) % 2 ==0:
+            res +=1
+    return res
 
-a =  evenNumber(1234)
+print(findNumbers([1234,124,6758,567,675755565]))

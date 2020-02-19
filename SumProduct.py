@@ -8,4 +8,4 @@ def sumProdut(n):
         n //= 10
     return product - sum
 
-print(sumProdut(12322133123123123123123))
+print(sumProdut(983))
