@@ -1,6 +1,4 @@
 from bisect import *
-
-
 def countNegatives(self, A):
     return sum(a < 0 for r in A for a in r)
 

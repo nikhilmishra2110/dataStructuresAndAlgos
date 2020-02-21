@@ -19,7 +19,6 @@ class Solution:
         print (curr.next.val)
         return dummy.next
 
-print(mergeTwoLists(1->2->4, 1->3->4))
 
 
 
