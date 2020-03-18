@@ -1,8 +1,5 @@
 # Merge list1 and list2 and return resulted list
 def merge_lists(lst1, lst2):
-
-
-
     index_arr1 = 0
     index_arr2 = 0
     index_result = 0
@@ -10,10 +7,7 @@ def merge_lists(lst1, lst2):
 
     for i in range(len(lst1)+len(lst2)):
         result.append(i)
-    # Traverse Both lists and insert smaller value from arr1 or arr2
-    # into result list and then increment that lists index.
-    # If a list is completely traversed, while other one is left then just
-    # copy all the remaining elements into result list
+
     while (index_arr1 < len(lst1)) and (index_arr2 < len(lst2)):
         if (lst1[index_arr1] < lst2[index_arr2]):
             result[index_result] = lst1[index_arr1]
