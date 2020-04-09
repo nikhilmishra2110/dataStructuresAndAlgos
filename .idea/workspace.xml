@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6a2068e-0d05-4d72-af12-a5070021c1b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/decimal_to_binary.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverse_string.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algos/BinaryTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +30,34 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.decimal_to_binary">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Algos" />
+      <recent name="$PROJECT_DIR$/Euler" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.BinaryTree">
+    <configuration name="BinaryTree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dataStructuresAndAlgos" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algos" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algos/BinaryTree.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="StackEd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dataStructuresAndAlgos" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -44,27 +71,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algos/StackEd.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="checkSum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="dataStructuresAndAlgos" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algos/checkSum.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.BinaryTree" />
         <item itemvalue="Python.decimal_to_binary" />
         <item itemvalue="Python.reverse_string" />
         <item itemvalue="Python.StackEd" />
         <item itemvalue="Python.mergeTwoSortedList" />
-        <item itemvalue="Python.checkSum" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1584895360376</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="mergeLists.py">
+      <created>1586461108022</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586461108022</updated>
+    </task>
+    <task id="LOCAL-00004" summary="mergeLists.py">
+      <created>1586461246561</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586461246561</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -191,32 +211,36 @@
     <option name="LAST_COMMIT_MESSAGE" value="mergeLists.py" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="348" y="39" key="CommitChangelistDialog2" timestamp="1586461107686">
+    <state x="348" y="39" key="CommitChangelistDialog2" timestamp="1586461246319">
       <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="348" y="39" key="CommitChangelistDialog2/0.23.1440.827@0.23.1440.827" timestamp="1584895360126" />
     <state x="348" y="39" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1584552017927" />
-    <state x="348" y="39" key="CommitChangelistDialog2/0.23.1440.830@0.23.1440.830" timestamp="1586461107686" />
+    <state x="348" y="39" key="CommitChangelistDialog2/0.23.1440.830@0.23.1440.830" timestamp="1586461246319" />
     <state x="100" y="123" width="1240" height="627" key="DiffContextDialog" timestamp="1584705310830">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="100" y="123" width="1240" height="627" key="DiffContextDialog/0.23.1440.827@0.23.1440.827" timestamp="1584705310830" />
-    <state width="1419" height="213" key="GridCell.Tab.0.bottom" timestamp="1584897740916">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1419" height="213" key="GridCell.Tab.0.bottom" timestamp="1586464821261">
+      <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state width="1419" height="213" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1584897740916" />
-    <state width="1419" height="213" key="GridCell.Tab.0.center" timestamp="1584897740914">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1419" height="213" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1586464821261" />
+    <state width="1419" height="213" key="GridCell.Tab.0.center" timestamp="1586464821260">
+      <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state width="1419" height="213" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1584897740914" />
-    <state width="1419" height="213" key="GridCell.Tab.0.left" timestamp="1584897740914">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1419" height="213" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1586464821260" />
+    <state width="1419" height="213" key="GridCell.Tab.0.left" timestamp="1586464821260">
+      <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state width="1419" height="213" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1584897740914" />
-    <state width="1419" height="213" key="GridCell.Tab.0.right" timestamp="1584897740915">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1419" height="213" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1586464821260" />
+    <state width="1419" height="213" key="GridCell.Tab.0.right" timestamp="1586464821261">
+      <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state width="1419" height="213" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1584897740915" />
+    <state width="1419" height="213" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1586464821261" />
     <state x="229" y="75" key="SettingsEditor" timestamp="1582332323818">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
