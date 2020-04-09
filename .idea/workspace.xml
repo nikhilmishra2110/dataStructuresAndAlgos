@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c6a2068e-0d05-4d72-af12-a5070021c1b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/decimal_to_binary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reverse_string.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Y8lro7honYo2UmgKVqCfQC68hL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.decimal_to_binary">
+    <configuration name="StackEd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dataStructuresAndAlgos" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algos/StackEd.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="checkSum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dataStructuresAndAlgos" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algos/checkSum.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="decimal_to_binary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dataStructuresAndAlgos" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algos/decimal_to_binary.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mergeTwoSortedList" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dataStructuresAndAlgos" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algos/mergeTwoSortedList.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="reverse_string" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dataStructuresAndAlgos" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algos/reverse_string.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.decimal_to_binary" />
+        <item itemvalue="Python.reverse_string" />
+        <item itemvalue="Python.StackEd" />
+        <item itemvalue="Python.mergeTwoSortedList" />
+        <item itemvalue="Python.checkSum" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6a2068e-0d05-4d72-af12-a5070021c1b9" name="Default Changelist" comment="" />
+      <created>1582332303330</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582332303330</updated>
+    </task>
+    <task id="LOCAL-00001" summary="mergeLists.py">
+      <created>1584552018234</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584552018234</updated>
+    </task>
+    <task id="LOCAL-00002" summary="mergeLists.py">
+      <created>1584895360376</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584895360376</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mergeLists.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="mergeLists.py" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="348" y="39" key="CommitChangelistDialog2" timestamp="1586461107686">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="348" y="39" key="CommitChangelistDialog2/0.23.1440.827@0.23.1440.827" timestamp="1584895360126" />
+    <state x="348" y="39" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1584552017927" />
+    <state x="348" y="39" key="CommitChangelistDialog2/0.23.1440.830@0.23.1440.830" timestamp="1586461107686" />
+    <state x="100" y="123" width="1240" height="627" key="DiffContextDialog" timestamp="1584705310830">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="100" y="123" width="1240" height="627" key="DiffContextDialog/0.23.1440.827@0.23.1440.827" timestamp="1584705310830" />
+    <state width="1419" height="213" key="GridCell.Tab.0.bottom" timestamp="1584897740916">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1419" height="213" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1584897740916" />
+    <state width="1419" height="213" key="GridCell.Tab.0.center" timestamp="1584897740914">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1419" height="213" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1584897740914" />
+    <state width="1419" height="213" key="GridCell.Tab.0.left" timestamp="1584897740914">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1419" height="213" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1584897740914" />
+    <state width="1419" height="213" key="GridCell.Tab.0.right" timestamp="1584897740915">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1419" height="213" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1584897740915" />
+    <state x="229" y="75" key="SettingsEditor" timestamp="1582332323818">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="229" y="75" key="SettingsEditor/0.23.1440.827@0.23.1440.827" timestamp="1582332323818" />
+    <state x="320" y="178" key="Vcs.Push.Dialog.v2" timestamp="1586461110629">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.23.1440.827@0.23.1440.827" timestamp="1584895366968" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1584552132976" />
+    <state x="320" y="178" key="Vcs.Push.Dialog.v2/0.23.1440.830@0.23.1440.830" timestamp="1586461110629" />
+    <state x="413" y="270" key="com.intellij.ide.util.TipDialog" timestamp="1586461083974">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="413" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.827@0.23.1440.827" timestamp="1584805338992" />
+    <state x="413" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.828@0.23.1440.828" timestamp="1584539990482" />
+    <state x="413" y="270" key="com.intellij.ide.util.TipDialog/0.23.1440.830@0.23.1440.830" timestamp="1586461083974" />
+  </component>
+</project>

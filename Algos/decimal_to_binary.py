@@ -1,4 +1,4 @@
-from stack import Stack
+from Algos.stack import Stack
 
 def convert(dec):
     s = Stack()
