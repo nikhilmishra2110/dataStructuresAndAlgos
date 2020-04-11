@@ -13,7 +13,7 @@ def find_closest_num(A, target):
 
         mid = (low + high) // 2
         if mid + 1 < len(A):
-            smallest_diff_right = abs(A[mid + 1] - target)
+            smallest_diff_right = abs(A[mid + 1] - target) # there can be negetive numberss
         if mid > 0:
             smallest_diff_left = abs(A[mid - 1] -target)
 
