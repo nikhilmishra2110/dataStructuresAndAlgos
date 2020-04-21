@@ -1,4 +1,4 @@
-from Algos.stack import Stack
+from Algos.Other.stack import Stack
 
 def reverse_string(input_string):
     s = Stack()

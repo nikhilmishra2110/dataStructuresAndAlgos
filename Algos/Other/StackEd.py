@@ -1,4 +1,4 @@
-from Algos.stack import Stack
+from Algos.Other.stack import Stack
 
 def is_match(p1, p2):
     if p1 == "(" and p2 == ")":

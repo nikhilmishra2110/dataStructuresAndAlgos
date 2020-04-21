@@ -1,3 +1,6 @@
+import bisect
+
+
 def peak_iterative(A):
     for i in range(len(A)):
         if A[i] > A[i+1] and A[i-1] < A[i]:
