@@ -18,15 +18,17 @@ class Solution:
     def reverseString(self, s):
         """Two Pointers Approach
             In this approach, two pointers are used to process two array elements at the same time. Usual implementation
-             is to set one pointer in the beginning and one at the end and then to move them until they both meet.
+            is to set one pointer in the beginning and one at the end and then to move them until they both meet.
             Sometimes one needs to generalize this approach in order to use three pointers, like for classical Sort
             Colors problem.
+
             Algorithm
-            Set pointer left at index 0, and pointer right at index n - 1, where n is a number of elements in the array.
-            While left < right:
-            Swap s[left] and s[right].
-            Move left pointer one step right, and right pointer one step left."""
-        r = list(s)
+                Set pointer left at index 0, and pointer right at index n - 1, where n is a number of elements in the array.
+                While left < right:
+                Swap s[left] and s[right].
+                Move left pointer one step right, and right pointer one step left."""
+
+        r = list(s) # convert string to list
         i = 0
         j = len(r) - 1
         while i < j:
@@ -136,28 +138,32 @@ class Solution:
 
     def isAnagram(self, s, t):
         print (s,t)
+        # convert string to list
         l1 = list(s)
         l2 = list(t)
         l1.sort()
         l2.sort()
         return l1==l2
 
+    def maxProfitMultipleTx(self, prices):
+        if not prices or len(prices) is 1:
+            return 0
 
-    def maxProfit(self, prices):
-        max_sum = prices[0]
-        current_sum = max_sum
-        for i in range(1,len(prices)):
-            current_sum = max(prices[i], current_sum+prices[i])
-            print ("Current sum = ", current_sum)
-            max_sum = max(current_sum, max_sum)
-        return max_sum
-
-    def max_profit2(self,prices):
         profit = 0
-        for i in range(1,len(prices)):
-            if prices[i] > prices[i-1]:
-                profit += prices[i] - prices[i-1]
+
+        for i in range(1, len(prices)):
+            if prices[i] > prices[i - 1]:
+                profit += prices[i] - prices[i - 1]
+
         return profit
+
+    def maxProfitOneTx(self, prices):
+        max_profit, min_price = 0, float('inf')
+        for i in prices:
+            min_price = min(min_price, i)
+            profit = i - min_price
+            max_profit = max(max_profit, profit)
+        return max_profit
 
     def containsDuplicate(self, nums):
         d = {}
@@ -275,6 +281,8 @@ class Solution:
 
             # One at the end
             row.append(1)
+
+            # this should be within the for loop because
             triangle.append(row)
         return triangle
 
@@ -295,10 +303,123 @@ class Solution:
                 d[i]-=1
         return res
 
+    def isHappy(self, n):
+        '''Because if the algorithm sees a number it has seen before, then it follows that it will go on the same path
+        and thus see it once again, creating an infinite loop. So a valid solution requires that all numbers seen on
+         the way to reducing n to 1 be unique.'''
+        s = set()
+        while n != 1:
+            if n in s: return False
+            s.add(n)
+            print("s -->>>",s)
+            n = sum([int(i) ** 2 for i in str(n)])
+            print("n after ", n)
+        return True
+
+
+    def hammingWeight(self, n):
+        count = 0
+        m = bin(n).count('')
+        for i in m:
+            if i == '1':
+                count += 1
+        return count
+
+    def hamming2(self, n):
+        return int(bin(n).count('1'))
+
+    def isSymmetric(self, root):
+        if not root:
+            return True
+        return self.checker(root.left, root.right)
+
+    def checker(self, node1, node2):
+        if node1 == None and node2 == None:
+            return True
+        elif node1 == None or node2 == None:
+            return False
+        else:
+            return node1.val == node2.val and self.checker(node1.left, node2.right) and self.checker(node1.right,
+                                                                                                     node2.left)
+    def maxSubArray(self, nums):
+    # def maxSubArray(self, nums: List?[int]) -> :
+        max_sum = curr_sum = nums[0]
+        for num in nums[1:]:
+            curr_sum = max(num, num+curr_sum)
+            max_sum = max(curr_sum, max_sum)
+            print ("num -->", num)
+            print ("curr sum -->", curr_sum)
+            print ("max sum -->", max_sum)
+            print ()
+        return max_sum
+
+    def twoSum(self, num, target):
+        d = {}
+        for i in range(len(num)):
+            compliment = target - num[i]
+            if compliment in d:
+                return [d[compliment], i]
+            else:
+                d[num[i]] = i
+
+    def removeDuplicates(self, nums):
+        write_index = 0
+        for i in range(1, len(nums)):
+            if nums[i] != nums[write_index]:
+                # first increment the counter as this is a new number
+                write_index += 1
+                nums[write_index] = nums[i]
+        return write_index + 1
+
+    def countAndSay(self, n):
+        s = '1'
+        for _ in range(n-1):
+            let, temp, count = s[0], '', 0
+            for l in s:
+                if let == l:
+                    count += 1
+                else:
+                    temp += str(count)+let
+                    let = l
+                    count = 1
+            temp += str(count)+let
+            s = temp
+        return s
+
+    def isPalindrome(self, head):
+        if not head or not head.next: return True
+
+        slow, fast = head, head
+
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+
+        prev = None
+
+        while slow:
+            nxt = slow.next
+            slow.next = prev
+            prev = slow
+            slow = nxt
+
+        while prev:
+            if head.val != prev.val: return False
+            head = head.next
+            prev = prev.next
+
+        return True
 
 
 #1001209191712094
 s = Solution()
+print (s.countAndSay(1211))
+# print (s.maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
+# print (s.twoSum([2, 7, 11, 15], 9))
+# print (s.twoSUm([2, 7, 11, 15], 9))
+# print (s.removeDuplicates([1,1,2]))
+# print (s.removeDuplicates([0,0,0,0,0,0,0,0,0,0,1,1,2,3]))
+# print (s.maxSubArrayGoogle([-2,1,-3,4,-1,2,1,-5,4]))
 # print(s.reverseString("Nikhil"))
 # print(s.reverseRecursive("Nikhil"))
 # print (s.single_number2([4,4,2, 2,1]))
@@ -319,4 +440,8 @@ s = Solution()
 # print(s.titleToNumber("AE"))
 # print (s.pascals_triangle(5))
 # print (s.missingNumber([]))
-print (s.intersect([1,2,2,1], [2]))
+# print (s.intersect([1,2,2,1], [2]))//
+# print(s.maxProfitOneTx([7,1,5,3,6,4]))
+# print (s.isHappy(19))
+# print(s.hammingWeight(8763234))
+# print(s.hamming2(8763234))
