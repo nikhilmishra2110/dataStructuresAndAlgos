@@ -1,6 +1,7 @@
 from collections import Counter
 from functools import reduce
 
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -13,6 +14,7 @@ class TreeNode:
         self.val = x
         self.left = None
         self.right = None
+
 
 class Solution:
     def reverseString(self, s):
@@ -28,7 +30,7 @@ class Solution:
                 Swap s[left] and s[right].
                 Move left pointer one step right, and right pointer one step left."""
 
-        r = list(s) # convert string to list
+        r = list(s)  # convert string to list
         i = 0
         j = len(r) - 1
         while i < j:
@@ -121,29 +123,29 @@ class Solution:
     def majority_element(self, nums):
         d = {}
         for i in nums:
-            d[i] = d.get(i, 0) +1
+            d[i] = d.get(i, 0) + 1
 
         for key, value in d.items():
-            if value > len(nums)//2:
+            if value > len(nums) // 2:
                 return key
 
     def sorted_array_to_bst(self, nums):
-        if len(nums) ==0:
+        if len(nums) == 0:
             return
-        mid = len(nums)//2
+        mid = len(nums) // 2
         root = TreeNode(nums[mid])
         root.left = self.sorted_array_to_bst(nums[:mid])
-        root.right = self.sorted_array_to_bst(nums[mid+1:])  # do not forget +1
+        root.right = self.sorted_array_to_bst(nums[mid + 1:])  # do not forget +1
         return root
 
     def isAnagram(self, s, t):
-        print (s,t)
+        print(s, t)
         # convert string to list
         l1 = list(s)
         l2 = list(t)
         l1.sort()
         l2.sort()
-        return l1==l2
+        return l1 == l2
 
     def maxProfitMultipleTx(self, prices):
         if not prices or len(prices) is 1:
@@ -168,38 +170,34 @@ class Solution:
     def containsDuplicate(self, nums):
         d = {}
         for i in nums:
-            d[i] = d.get(i,0)+1
+            d[i] = d.get(i, 0) + 1
 
         for key, value in d.items():
             if value > 1:
                 return True
         return False
 
-
-
     def romanToInt(self, s):
         roman = {
-                    'M': 1000,
-                    'D': 500 ,
-                    'C': 100,
-                    'L': 50,
-                    'X': 10,
-                    'V': 5,
-                    'I': 1}
+            'M': 1000,
+            'D': 500,
+            'C': 100,
+            'L': 50,
+            'X': 10,
+            'V': 5,
+            'I': 1}
         z = 0
         for i in range(0, len(s) - 1):
-            if roman[s[i]] < roman[s[i+1]]:
+            if roman[s[i]] < roman[s[i + 1]]:
                 z -= roman[s[i]]
             else:
                 z += roman[s[i]]
-            print ("z - ", z)
-            print ("roman[s[i]] - ", roman[s[i]])
+            print("z - ", z)
+            print("roman[s[i]] - ", roman[s[i]])
         return z + roman[s[-1]]
-
 
     def ExcelColumns(self, s):
         return reduce(lambda x, y: x * 26 + y, [ord(c) - 64 for c in list(s)])
-
 
     def titleToNumber(self, s):
         """
@@ -207,9 +205,9 @@ class Solution:
         """
         res = 0
         for i in s:
-            print("ord(i) -> ",ord(i))
-            print("ord(A) -> ",ord("A"))
-            print("ord(i) - ord(A) -> ",ord(i) - ord("A"))
+            print("ord(i) -> ", ord(i))
+            print("ord(A) -> ", ord("A"))
+            print("ord(i) - ord(A) -> ", ord(i) - ord("A"))
             res = res * 26 + ord(i) - ord('A') + 1
             print("res is ", res)
         return res
@@ -243,11 +241,10 @@ class Solution:
         curr.next = l1 or l2
         return curr
 
-
     def firstUniqChar(self, s: str) -> int:
         d = {}
         for i in s:
-            d[i] = d.get(i,0)+1
+            d[i] = d.get(i, 0) + 1
         index = -1
         for i in range(len(s)):
             if d[s[i]] == 1:
@@ -271,13 +268,13 @@ class Solution:
         # for all rows
         for i in range(1, numRows):
             # get the whole  previous row and
-            prev_row = triangle[i-1]
+            prev_row = triangle[i - 1]
             # building the actual row
             row = []
             # One at the beginning
             row.append(1)
             for j in range(1, i):
-                row.append(prev_row[j-1] + prev_row[j])
+                row.append(prev_row[j - 1] + prev_row[j])
 
             # One at the end
             row.append(1)
@@ -288,19 +285,19 @@ class Solution:
 
     def missingNumber(self, nums):
         actual_sum = sum(nums)
-        n = len(nums)+1 # since we knw there is one missing, adding one
-        return n*(n-1)/2 -actual_sum
+        n = len(nums) + 1  # since we knw there is one missing, adding one
+        return n * (n - 1) / 2 - actual_sum
 
-    def intersect(self, nums1 , nums2):
+    def intersect(self, nums1, nums2):
         d = {}
         res = []
         for i in nums1:
-            d[i] = d.get(i,0)+1
+            d[i] = d.get(i, 0) + 1
 
         for i in nums2:
             if i in d and d[i] > 0:
                 res.append(i)
-                d[i]-=1
+                d[i] -= 1
         return res
 
     def isHappy(self, n):
@@ -311,11 +308,10 @@ class Solution:
         while n != 1:
             if n in s: return False
             s.add(n)
-            print("s -->>>",s)
+            print("s -->>>", s)
             n = sum([int(i) ** 2 for i in str(n)])
             print("n after ", n)
         return True
-
 
     def hammingWeight(self, n):
         count = 0
@@ -341,16 +337,17 @@ class Solution:
         else:
             return node1.val == node2.val and self.checker(node1.left, node2.right) and self.checker(node1.right,
                                                                                                      node2.left)
+
     def maxSubArray(self, nums):
-    # def maxSubArray(self, nums: List?[int]) -> :
+        # def maxSubArray(self, nums: List?[int]) -> :
         max_sum = curr_sum = nums[0]
         for num in nums[1:]:
-            curr_sum = max(num, num+curr_sum)
+            curr_sum = max(num, num + curr_sum)
             max_sum = max(curr_sum, max_sum)
-            print ("num -->", num)
-            print ("curr sum -->", curr_sum)
-            print ("max sum -->", max_sum)
-            print ()
+            print("num -->", num)
+            print("curr sum -->", curr_sum)
+            print("max sum -->", max_sum)
+            print()
         return max_sum
 
     def twoSum(self, num, target):
@@ -372,21 +369,22 @@ class Solution:
         return write_index + 1
 
     def countAndSay(self, n):
+        # TODO: fix this
         s = '1'
-        for _ in range(n-1):
+        for _ in range(n - 1):
             let, temp, count = s[0], '', 0
             for l in s:
                 if let == l:
                     count += 1
                 else:
-                    temp += str(count)+let
+                    temp += str(count) + let
                     let = l
                     count = 1
-            temp += str(count)+let
+            temp += str(count) + let
             s = temp
         return s
 
-    def isPalindrome(self, head):
+    def isPalindromeLinkedList(self, head):
         if not head or not head.next: return True
 
         slow, fast = head, head
@@ -410,10 +408,33 @@ class Solution:
 
         return True
 
+    def intersectionLinkedList(self, headA, headB):
+        if not headA or not headB: return None
 
-#1001209191712094
+        a_pointer = headA
+        b_pointer = headB
+
+        while (a_pointer != b_pointer):
+            if not a_pointer:
+                a_pointer = headB
+            else:
+                a_pointer = a_pointer.next
+
+            if not b_pointer:
+                b_pointer = headA
+            else:
+                b_pointer = b_pointer.next
+
+        return a_pointer
+
+
+
+
+
+# 1001209191712094
 s = Solution()
-print (s.countAndSay(1211))
+# print(s.isPalindrome(1001209191712094209421))
+# print (s.countAndSay(1211))
 # print (s.maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
 # print (s.twoSum([2, 7, 11, 15], 9))
 # print (s.twoSUm([2, 7, 11, 15], 9))
