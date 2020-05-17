@@ -148,6 +148,10 @@ class Solution:
         return l1 == l2
 
     def maxProfitMultipleTx(self, prices):
+        """
+
+        :rtype: object
+        """
         if not prices or len(prices) is 1:
             return 0
 
@@ -427,12 +431,45 @@ class Solution:
 
         return a_pointer
 
+    def trailingZeroes(self, n):
+        zeros = 0
+        while n > 0:
+            n //= 5
+            zeros += n
+        return zeros
+
+    #     10 =  10 9 8 7 6 5 4 3 2 1
+
+    def factorial(self, n):
+        if n == 1 or n == 0: return 1
+        return n * self.factorial(n - 1)
+
+    def commonprefix(m):
+        if not m: return ''
+        s1 = min(m)
+        s2 = max(m)
+        for i, c in enumerate(s1):
+            if c != s2[i]:
+                return s1[:i]
+        return s1
+
+    def powerOfThree3(self, n):
+        while n % 3 == 0 and n != 0:
+            n /= 3
+        if n == 1: return True
+        return False
 
 
 
 
 # 1001209191712094
 s = Solution()
+print(s.longestCommonPrefix(["flower", "flow", "flight"]))
+# print(s.powerOfThree3(27))
+# print(s.powerOfThree3(4))
+# print(s.powerOfThree3(15))
+# print(s.trailingZeroes(4))
+# print (s.plusOne([1,2,3,4]))
 # print(s.isPalindrome(1001209191712094209421))
 # print (s.countAndSay(1211))
 # print (s.maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
