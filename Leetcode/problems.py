@@ -187,7 +187,7 @@ class BST:
                         curr.value = curr.left.value
                         curr.right = curr.left.right
                         curr.left = curr.left.left  # Assign the left value last so that we do not change it b4 using it
-                    elif curr.right is not None: # one of the child is missing here right is missing
+                    elif curr.right is not None:  # one of the child is missing here right is missing
                         #     5
                         #      \
                         #      9
@@ -224,4 +224,3 @@ class BST:
         while curr.left is not None:
             curr = curr.left
         return curr.value
-
