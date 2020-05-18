@@ -460,8 +460,6 @@ class Solution:
         return False
 
 
-
-
 # 1001209191712094
 s = Solution()
 print(s.longestCommonPrefix(["flower", "flow", "flight"]))
